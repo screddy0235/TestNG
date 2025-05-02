@@ -1,11 +1,23 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import java.time.Duration;
 
 public class TestCase_using_Webdriver {
     WebDriver driver;
+
+    @BeforeSuite
+    public void beforeSuite(){
+        System.out.println("BeforeSuite");
+    }
+
+    @AfterSuite
+    public void afterSuite(){
+        System.out.println("AfterSuite");
+    }
 
     @Test(priority = 1)
     public void openApp(){

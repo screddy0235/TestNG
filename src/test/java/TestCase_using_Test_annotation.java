@@ -1,6 +1,11 @@
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class TestCase_using_Test_annotation {
+    @BeforeTest
+    public void beforeTest(){
+        System.out.println("BeforeTest");
+    }
 
     @Test(priority = 1)
     public void openApp(){
