@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ParallelTesting" parallel="tests" thread-count="3">
+    <test name="TestParallelChrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="ParametrizationUsingXml"/>
+        </classes>
+    </test>
+
+    <test name="TestParallelFirefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="ParametrizationUsingXml"/>
+        </classes>
+    </test>
+
+    <test name="TestParallelIE">
+        <parameter name="browser" value="IE"/>
+        <classes>
+            <class name="ParametrizationUsingXml"/>
+        </classes>
+    </test>
+</suite>
+
