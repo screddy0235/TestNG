@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Grouping">
+    <test name="GroupTest">
+        <groups>
+            <run>
+                <include name="sanity"/>
+<!--                <include name="combined"/>-->
+<!--                <exclude name="Regression"/>-->
+
+            </run>
+        </groups>
+        <classes>
+            <class name="Method_Before_After"/>
+            <class name="TestCase_using_Test_annotation"/>
+        </classes>
+    </test>
+</suite>

@@ -5,7 +5,7 @@ public class Method_Before_After {
     public void login(){
     System.out.println("Login Application");
     }
-    @Test(priority = 1)
+    @Test(priority = 1, groups = {"sanity"})
     public void search(){
         System.out.println("Search");
     }
